@@ -5,8 +5,8 @@ Tabla hash en javascrip
 //Creacción de la tabla contendedora de la llaves y valores
 class TablaHash {
     constructor(){
-        //Tabla con un tamaño de 100 inicializado en 0 
-        this.tabla = new Array(100); 
+        //Tabla con una array de 150
+        this.tabla = new Array(150); 
         //tamaño inicial de la tabla
         this.tamano = 0;
     }
@@ -48,10 +48,10 @@ class TablaHash {
 const ht = new TablaHash();
 
 //Colocamos la llave y el valor con la función set previamente declarada
-ht.set("Tiros a puerta", 11);
-ht.set("Remates", "Rodrigo");
-ht.set("2", 5);
-ht.set("Fuera juego", 27);
+ht.set("Tiros a puerta", 27);
+ht.set("Remates", 11);
+ht.set("2", "Rodrigo");
+ht.set("Fuera juego", 5);
 
 //Mostramos en consola la llave y el valor con la función get previamente declarada
 console.log(ht.get("Tiros a puerta"));
